@@ -1,0 +1,10 @@
+<h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+<ul class="post-list">
+  <% @posts.each do |post| %>
+    <li><%= post.name %></li>
+    <li><%= post.email %></li>
+    <li><%= post.comment %></li>
+  <% end %>
+</ul>
+<button class="more" type="button">もっと見る</button>
