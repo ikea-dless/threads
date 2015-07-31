@@ -3,3 +3,6 @@ machine:
     Asia/Tokyo
   ruby:
     version: 2.2.2
+dependencies:
+  pre:
+    - RAILS_ENV=test bundle exec rake secret
