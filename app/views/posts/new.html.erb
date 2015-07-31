@@ -1,3 +1,8 @@
+<% if @post.errors.any? %>
+  <% @post.errors.full_messages.each do |message| %>
+    <p><%= message %></p>
+  <% end %>
+<% end %>
 <%= form_for @post do |f| %>
   <%= f.text_field :name %>
   <%= f.email_field :email %>
