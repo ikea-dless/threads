@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(params.require(:post).permit(:name, :email, :comment))
     if @post.save
-      redirect_to @post, notice: 'post was saved'
+      redirect_to posts_path, notice: 'post was saved'
     else
       render new
     end
