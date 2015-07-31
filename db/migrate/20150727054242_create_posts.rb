@@ -2,8 +2,8 @@ class CreatePosts < ActiveRecord::Migration
   def change
     create_table :posts do |t|
 
-      t.string :name, null: false
-      t.string :email, null: false
+      t.string :name
+      t.string :email
       t.string :comment
       t.timestamps null: false
     end
